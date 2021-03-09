@@ -19,7 +19,7 @@ let removeLargeSpaces = require("./commands/reomoveSpaces");
 
   for (let j = 0; j < files.length; j++) {
     if (fs.existsSync(files[j])) {
-      str += fs.readFileSync(files[j]).toString(); //file path not name 
+      str += fs.readFileSync(files[j]).toString(); 
     } else {
       console.log("Invalid file");
       return;
@@ -39,7 +39,7 @@ let removeLargeSpaces = require("./commands/reomoveSpaces");
       str = addAllNum(str);
     }
   } else {
-    //either one is present or none are present
+   
     if (options.includes("-n")) {
       //implement -n
       str = addAllNum(str); 
